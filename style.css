@@ -35,7 +35,6 @@ nav li {
 }
 nav a {
     text-decoration: none;
-    margin-top: 1005px;
     font-size: 1.1em;
 }
 nav a:hover {
@@ -46,6 +45,8 @@ nav a:hover {
     bottom: 5px;
 }
 article img {
+    padding: 8px;
+    border: solid 3px gray;
     float: right;
 }
 article img:hover {
