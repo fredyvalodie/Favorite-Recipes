@@ -20,6 +20,7 @@ body {
 }
 .green {
     background-color: green;
+    flex: 3;
 }
 .blue {
     background-color: blue;
@@ -33,7 +34,7 @@ p {
         width: 75%;
         margin: 0px auto;
     }
-    .item {
-        background-color: lightblue;
+    .green {
+        order: 2;
     }
 }
