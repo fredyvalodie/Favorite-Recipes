@@ -15,37 +15,45 @@ a {
     border-bottom: solid 2px rgb(194, 188, 174);
 }
 header {
+    display: flex;
+    flex-flow: row wrap;
     width: 70%;
-    height: 150px;
     margin: 0px auto;
 }
-.left_header {
-   float: left;
-   clear: both;
+.left_header, .right_header {
+    flex: 1;
 }
 .left_header h1 {
-    margin-left: 20px;
-    margin-bottom: 0px;
-    margin-top: 7px;
-    font-size: 3rem;
+    font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    padding-left: 5px;
 }
 .left_header p {
-    margin-left: 7px;
-    margin-top: 2px;
-    font-size: 0.7rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.right_header {
-    float: right;
-    margin-right: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 0.72em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .right_header ul li {
     display: inline;
-    margin: 8px;
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    padding: 5px;
+    line-height: 1.8em; 
+}
+.right_header ul li:hover {
+    background-color: black;
+    border-radius: 7px;
+}
+.right_header ul a:hover {
+    color: white;
+}
+.right_header ul {
+    padding: 0px;
+    text-align: center;
 }
 .menu {
-    clear: both;
+    flex: 4;
     text-align: center;
     font-size: 1.3em;
     margin-top: 120px;
