@@ -2,112 +2,38 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.1em;
     margin-bottom: 5px;
+    min-height: 100vh;
     background-color: rgb(245, 243, 239);
 }
-.back_to_top {
-    width: 60px;
-    position: fixed;
-    bottom: 30px;
-    left: 25px;
-    z-index: 999999;
-}
-.back_to_top:hover {
-    bottom: 40px;
-    width: 70px;
-}
-.contener {
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 150px;
-}
-/*this si a comment*/
-blockquote {
-    font-family: "Soulless";
-    width: 30%;
-    text-align: justify;
-    font-style: italic;
-}
-header {
-    text-align: center;
-}
-header blockquote {
-    margin: 0 auto;
-}
-nav {
-    padding-top: 5px;
-    background-color: rgb(245, 243, 239);
-    position: sticky;
-    top: 0px;
-    text-align: center;
-    border-bottom: solid 2px rgb(194, 186, 186);
-}
-nav li {
-    list-style: none;
-    display: inline;
-    margin: 5px;
-    font-size: 1.1em;
-    font-weight: bold;
-}
-nav a {
-    text-decoration: none;
-    font-size: 1.1em;
-}
-nav a:hover {
-    padding-bottom: 50px;
-    text-decoration: underline;
-    text-decoration-color: red;
-    position: relative;
-    bottom: 5px;
-}
-article img {
-    padding: 8px;
-    border: solid 3px gray;
-    float: right;
-}
-article img:hover {
-    width: 500px;
-}
-.couscousimage {
-    margin-top: -60px;
-}
-article ul li {
-    list-style-type: none;
-    margin: 5px;
-}
-article ul li:before {
-    content: '\25BA';
-}
-
-     /*footer CSS codes*/
-
-.footer_content, .footer_bottom {
-    width: 75%;
-    margin: 0 auto;
-}
-footer {
-    min-height: 250px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.container {
     display: flex;
-    background-color: rgba(207, 203, 203, 0.507);
-    margin: auto -8px -3px -8px;
-    position: relative;
+    flex-flow: row wrap;
+    min-width: 500px;
+    min-height: 200px;
 }
-footer .footer_content {
-    display: flex;
-    margin-bottom: 30px;
-    font-size: 0.8rem;
-    line-height: 1.1rem;
+.item {
+    flex: 1;
+    min-width: 200px;
 }
-footer .footer_bottom {
-    background-color: rgb(207, 203, 203);
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top: 6px;
-    line-height: 1.1rem;
+.red {
+    background-color: red;
 }
-footer .footer_bottom span {
-    font-family: cursive;
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+p {
+    color:red;
+}
+@media screen and (max-width:600px) {
+    .container {
+        flex-flow: column wrap;
+        width: 75%;
+        margin: 0px auto;
+    }
+    .item {
+        background-color: lightblue;
+    }
 }
