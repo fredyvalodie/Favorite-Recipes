@@ -4,6 +4,8 @@ body {
     margin-bottom: 5px;
     min-height: 100vh;
     background-color: rgb(245, 243, 239);
+    margin: 0px;
+    padding: auto 15px;
 }
 .container {
     display: flex;
@@ -17,24 +19,75 @@ body {
 }
 .red {
     background-color: red;
+    display: flex;
+    justify-content: center;
+}
+.red p {
+    font-size: 0.6em;
+    line-height: 0.5em;
 }
 .green {
     background-color: green;
     flex: 3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.menu {
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.green ul li {
+    display: inline;
+}
+.green ul li a {
+    padding: 25px;
+    margin: 10px;
+    font-size: 1.2em;
 }
 .blue {
     background-color: blue;
+    display: flex;
+    justify-content: flex-start;
 }
-p {
-    color:red;
+.blue ul li {
+    display: inline;
 }
+.blue a {
+    margin-right: 15px;
+    padding-right: 10px;
+}
+
+
 @media screen and (max-width:600px) {
     .container {
         flex-flow: column wrap;
+        justify-content: center;
         width: 75%;
         margin: 0px auto;
     }
     .green {
         order: 2;
+        justify-content: center;
     }
+    .blue {
+        justify-content: center;
+    }
+    .blue ul li {
+        display: inline;
+    }
+    .red {
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:600px) {
+    .green ul li {
+        display: block;
+        margin-left: -50px;
+    }
+}
+a {
+    text-decoration: none;
+    color: black;
 }
