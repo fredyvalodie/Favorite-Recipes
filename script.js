@@ -1,1 +1,2 @@
-const homeButton = document.getElementById('home_button');
+const title = document.getElementById("big_title");
+title.innerHTML = "Just Enjoy Food !";
