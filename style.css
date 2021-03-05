@@ -41,6 +41,9 @@ nav {
     text-align: center;
     border-bottom: solid 2px rgb(194, 186, 186);
 }
+nav ul {
+    margin-left: -30px;
+}
 nav li {
     list-style: none;
     display: inline;
@@ -58,6 +61,14 @@ nav a:hover {
     text-decoration-color: red;
     position: relative;
     bottom: 5px;
+}
+nav div.client_settings {
+    float: right;
+    margin-top: -55px;
+    margin-right: 20px;
+}
+nav div.client_settings img {
+    padding-left: 10px;
 }
 article img {
     padding: 8px;
