@@ -64,11 +64,11 @@ nav a:hover {
 }
 nav div.client_settings {
     float: right;
-    margin-top: -55px;
-    margin-right: 20px;
+    margin-top: -45px;
+    margin-right: 25px;
 }
 nav div.client_settings img {
-    padding-left: 10px;
+    padding-left: 27px;
 }
 article img {
     padding: 8px;
