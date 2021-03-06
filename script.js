@@ -4,4 +4,8 @@ title.innerHTML = "Just Enjoy Food !";
 title.style.color = "blue";
 
 const home = document.getElementById("home_link");
-home.setAttribute("href", "https://www.google.com/");
+
+const TextChange = (action) => {
+    home.innerHTML = action;
+}
+home.addEventListener('click', TextChange("Go Back to Top !"));
