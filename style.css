@@ -125,3 +125,13 @@ footer .footer_bottom span {
 
    /*Media Query*/
 
+@media screen and (max-width:600px) {
+    nav div.client_settings {
+        float: none;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    nav div.client_settings img {
+        padding-bottom: 5px;
+    }
+}
