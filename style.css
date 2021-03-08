@@ -137,4 +137,7 @@ footer .footer_bottom span {
         display: flex;
         flex-flow: column wrap;
     }
+    #home_link, #home_link img {
+        display: none;
+    }
 }
