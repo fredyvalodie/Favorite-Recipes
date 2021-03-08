@@ -91,7 +91,7 @@ article ul li:before {
 
      /*footer CSS codes*/
 
-.footer_content, .footer_bottom {
+.footer_content {
     width: 75%;
     margin: 0 auto;
 }
@@ -168,5 +168,11 @@ footer .footer_bottom span {
     }
     footer .footer_content {
         flex-direction: column;
+    }
+    .footer_content, .footer_bottom {
+        width: 85%;
+    }
+    .contener {
+        width: 90%;
     }
 }
